@@ -1,0 +1,34 @@
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display:flex;
+    }
+}
+
+@media screen and (max-width: 1153px){
+    .skills-col{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    .skill, .quality{
+        margin-left: 2rem;
+    }
+
+    .quality{
+        margin-bottom: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1154px){
+    .quality{
+        margin-bottom: 1.3rem;
+    }
+}
+

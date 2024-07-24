@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<style>
+
+    a{
+        font-size: 2rem;
+    }
+
+    .hi::after{
+        content: '';
+        background-color: blue;
+        height:5px;
+        width: 0;
+        position: absolute ;
+        left: 0;
+        bottom : 0px;
+        transition: width 0.2s ease;
+    }
+
+    .hi:hover::after{
+        width: 100%;
+    }
+
+    a::after{
+        width: 0;
+        transition: width 0.4s ease;
+        position: absolute;
+        bottom:0;
+        left:0;
+        background-color: grey;
+        height: 2px;
+        content: '';
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+
+    .undrline{
+        position: relative;
+        margin-left: 500px;
+    }
+
+    .undrline::after{
+        position:absolute;
+        background-color: rgb(255, 0, 0);
+        content:'';
+        height: 0.1rem;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+    }
+
+    .undrline:hover{
+        color:red
+    }
+
+    .undrline:hover::after{
+        transform: scaleX(1);
+    }
+
+    .contact-background{
+    background-image: url("./assets/background.jpg");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    }
+
+    
+
+</style>
+
+<html>
+
+    <body>
+        <div style="position: relative; display:inline-block" >
+            <a class ="hi">BRO</>
+        </div>
+        <div style="position: relative; display:inline-block" >
+            <a>WHAAAA</a>
+        </div>
+
+        <br>
+
+        <span class="undrline">Underline me please</span>
+
+
+        <section id="contact">
+            <div class="contact-background">
+                <p>giybgiuegbiuegb</p>feeffefh</div>
+        </section>
+    </body>
+</html>

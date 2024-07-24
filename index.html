@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop-nav.css">
+    <link rel="stylesheet" href="mobile-nav.css">
+    <link rel="stylesheet" href="mediaquerries.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./experience.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <div class="splash">
+        <div class="splash-text">Welcome.</div>
+    </div>
+
+    <nav id="desktop-nav">
+        <div class="logo">Elrich Ka Lung Chen</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Elrich Ka Lung Chen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/face.jpg" alt="Elrich profile picutre">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Elrich Chen</h1>
+            <p class="section__text__p2">CS Major</p>
+            <div class="btn-container">
+                <button id ="btn-colour-1" class="btn btn-colour-1" onclick="window.open('./assets/Elrich Chen CV.pdf')">
+                    Download CV 
+                </button>
+
+                <button id ="btn-colour-2" class="btn btn-colour-2" Onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="assets/linkedin.png" alt="My LinkedIn Profile"
+                class="icon" onclick="window.open('https://www.linkedin.com/in/elrich-chen-188702304/')">
+
+                <img src="assets/github.png" alt="My GitHub Profile"
+                class="icon" onclick="window.open('https://github.com/Elrich-Chen')">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p id="about1" class="section__text__p1">Get to Know More</p>
+        <h1 id="about2" class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img id="pic2" class="about-pic" src="./assets/face_1.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience" class="icon">
+                        <h3 class="about-title">Experience</h3>
+                        <p>2 months <br> Website development</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education" class="icon">
+                        <h3 class="about-title">Education</h3>
+                        <p> Calcutta International School <br>
+                        John Hopkins course [front-end development]</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p> I am Elrich Chen and I am a learner.
+                        I am currently pursuing a Bachelors Computing Degree at Queens University Ontario, 
+                        where my focus is AI and machine learning.
+                        I aspire to use my knowledge to build projects and keep my skills as sharp as possible.
+                        If I were to to have a life motto, it would be learning from the "little things" as 
+                        they help me push past the mean and go the extra mile. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href ='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container-1">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <DIV class="skills-col">
+                            <div class="skill" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>HTML</h3>
+                                    <p>Intermediate</l>
+                                </div>
+                            </div>
+
+                            <div class="skill" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>CSS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                        </DIV>
+
+                        <DIV class="skills-col">
+                            <div class="skill" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>Javascript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </div>
+
+                            <div class="skill" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                        </DIV>
+                    </div>
+                </div>
+
+                <div class="details-container-1">
+                    <h2 class="experience-sub-title">Strong Skills</h2>
+                    <div class="article-container">
+                        <DIV class="skills-col">
+                            <div class="quality" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>Leadership</h3>
+                                </div>
+                            </div>
+
+                            <div class="quality" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>Teamwork </h3>
+                                </div>
+                            </div>
+                        </DIV>
+
+                        <DIV class="skills-col">
+                            <div class="quality" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>Communication</h3>
+                                </div>
+                            </div>
+
+                            <div class="quality" >
+                                <img src="./assets/checkmark.png" alt="expeirence-icon" class="icon">
+                                <div class="skill-details">
+                                    <h3>Time Management</h3>
+                                </div>
+                            </div>
+                        </DIV>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="arrow-navigation" onclick="location.href='./#projects'" class="icon arrow">
+    </section>
+
+    <script src="script.js"></script>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse my Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project">
+                <div class="image-container">
+                    <img src="./assets/BuDGET app PREVIEW.png" alr="Project Preview">
+                </div>
+
+                <h1 class="project-title">Budget Website</h>
+
+                <div class="btn-container">
+                    <button id ="btn-colour-1" class="btn btn-colour-1" onclick="window.open('https://github.com')">
+                        GitHub
+                    </button>
+                    <button class="btn btn-colour-1" onclick="window.open('https://elrich-chen.github.io/budgetApp/')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="image-container">
+                    <img src="./assets/confluence 23.png" alr="Project Preview">
+                </div>
+
+                <h1 class="project-title">School Fest Website</h>
+
+                <div class="btn-container">
+                    <button id ="btn-colour-1" class="btn btn-colour-1" onclick="window.open('https://github.com')">
+                        GitHub
+                    </button>
+                    <button class="btn btn-colour-1" onclick="window.open('https://www.confluence23.in')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="arrow-navigation" onclick="location.href='./#contact'" class="icon arrow">
+    </section>
+
+    <div class="cut-through"></div>
+
+    <section id="contact">
+        <div class="contact-background">
+            <div class="section__text__p1">Get In Touch</div>
+            <div class="title">Contact Me</div>
+            <div class="contact-container">
+                <div class="contact">
+                    <img src="./assets/email.png" alt="email picture" class="icon">
+                    <a href="mailto:elrichchen123@gmail.com">23BRJB@queensu.ca</a>
+                </div>
+
+                <div class="contact">
+                    <img src="./assets/linkedin.png" alt="linkedin picture" class="iconn">
+                    <a href="https://www.linkedin.com/in/elrich-chen-188702304/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <img src="./assets/arrow1.png" alt="arrow-navigation" onclick="location.href='./#'" class="icon arroww">
+                <img src="./assets/arrow1.png" alt="arrow-navigation" onclick="location.href='./#'" class="icon arroww1">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
