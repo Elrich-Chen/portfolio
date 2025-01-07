@@ -440,6 +440,9 @@ header{
 
 
 .work-experience {
+	@media (max-width: 600px){
+        	margin-bottom: 300px;
+        }
     h2{
         text-align: right;
         font-size: 64px;
